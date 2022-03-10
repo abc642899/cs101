@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-#define COUNTER_FILE = "counter.bin"
+#define COUNTER_FILE  "counter.bin"
 
 void init_file(){
     int write_array[1] = {0};
@@ -43,7 +43,7 @@ int slot(int arr[6]) {
   return arr[6];
 }
 
-void set_counter(){
+void set_counter(int counter){
     int write_array[1];
     write_array[0] = counter;
     FILE* fp = fopen(COUNTER_FILE,"wb");
